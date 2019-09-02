@@ -48,22 +48,30 @@ public class ReadText{
         }
     }
 
+
     /**
      * Método que cierra el archivo
      */
 
     public static void closeFile(){
         scan.close();
-
     }
 
+    /**
+     * Método que lee por teclado la nueva linea que se desea agregar al final del texto
+     * @ return newline  linea de texto que se desea agregar al final
+     */
     public static String createNewline(){
         String newline= keyboard.nextLine();
         return newline;
     }
 
-    public static void addNewLine(String str){
-        System.out.println("\n" + str);
+    /**
+     * Método que cierra el archivo
+     * @param txt linea  que se desea agregar al final del texto
+     */
+    public static void addNewLine(String txt){
+        System.out.println("\n" + txt);
     }
 
 }
